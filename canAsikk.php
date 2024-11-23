@@ -1,8 +1,8 @@
 <?php
 $latestversion = "3";
-if(@$_GET['ca']){
+if(@$_GET["ca"]){
   $currentversion = $_GET["ca"];
-  if ($latestversion > $currentversion) {
+  if ($latestversion > $currentversion){
     echo "GETUPDATE";
   }
 }

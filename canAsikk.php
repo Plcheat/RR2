@@ -1,5 +1,5 @@
 <?php
-$latestversion = "1";
+$latestversion = "3";
 if(@$_GET['ca']){
   $currentversion = $_GET["ca"];
   if ($latestversion > $currentversion) {

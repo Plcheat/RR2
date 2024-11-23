@@ -1,5 +1,5 @@
 {
-version : '2.1',
+version : '1.0',
 downloadLink : 'Link',
 Message : 'Close',
 changeLog : 'VIP',

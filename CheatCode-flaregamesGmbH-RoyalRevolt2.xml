@@ -1,0 +1,113 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+<Identity Name="flaregamesGmbH.RoyalRevolt2" Publisher="CN=105BBC25-C647-4F42-8EF0-0A34112A8823" Version="10.5.0.0" ProcessorArchitecture="x86"/>
+<Properties>
+<DisplayName>Royal Revolt 2</DisplayName>
+<PublisherDisplayName>flaregames GmbH</PublisherDisplayName>
+<Logo>Assets\StoreLogo.png</Logo>
+</Properties>
+<Prerequisites>
+<OSMinVersion>6.3.0</OSMinVersion>
+<OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+</Prerequisites>
+<Resources>
+<Resource Language="en"/>
+<Resource Language="de"/>
+<Resource Language="es"/>
+<Resource Language="fr"/>
+<Resource Language="it"/>
+<Resource Language="nl"/>
+<Resource Language="tr"/>
+<Resource Language="ja"/>
+<Resource Language="id"/>
+<Resource Language="ko"/>
+<Resource Language="ru"/>
+<Resource Language="pt-br"/>
+<Resource Language="th"/>
+<Resource Language="vi"/>
+<Resource Language="pl"/>
+<Resource Language="zh-Hans"/>
+<Resource Language="zh-Hant"/>
+</Resources>
+<Applications>
+<Application Id="App" Executable="rr-tournament.exe" EntryPoint="rr-tournament.App">
+<Extensions>
+<Extension Category="windows.protocol">
+<Protocol Name="rr-tournament"/>
+</Extension>
+</Extensions>
+<m2:VisualElements DisplayName="Royal Revolt 2" Description="Direct3DApp1" BackgroundColor="#000000" ForegroundText="light" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" ToastCapable="true">
+<m2:DefaultTile Wide310x150Logo="Assets\WideLogo.png">
+<m2:ShowNameOnTiles>
+<m2:ShowOn Tile="square150x150Logo"/>
+<m2:ShowOn Tile="wide310x150Logo"/>
+</m2:ShowNameOnTiles>
+</m2:DefaultTile>
+<m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000"/>
+<m2:InitialRotationPreference>
+<m2:Rotation Preference="landscape"/>
+<m2:Rotation Preference="landscapeFlipped"/>
+</m2:InitialRotationPreference>
+</m2:VisualElements>
+</Application>
+</Applications>
+<Capabilities>
+<Capability Name="internetClient"/>
+</Capabilities>
+<Dependencies>
+<PackageDependency Name="Microsoft.VCLibs.120.00" MinVersion="12.0.21005.1"/>
+</Dependencies>
+<Extensions>
+<Extension Category="windows.activatableClass.inProcessServer">
+<InProcessServer>
+<Path>CLRHost.dll</Path>
+<ActivatableClass ActivatableClassId="VungleSDK.AdEventArgs" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdPlayableEventArgs" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.VungleSDKConfig" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdViewEventArgs" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.shared.Views.WindowUtils" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.shared.Views.AdDisplays.PopupAdDisplaySettings" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdEndEventArgs" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdFactory" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.UI.VungleAdControl" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdPlacementConfig" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.ConfigEventArgs" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.AdConfig" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="VungleSDK.DiagnosticLogEvent" ThreadingModel="both"/>
+</InProcessServer>
+</Extension>
+<Extension Category="windows.activatableClass.inProcessServer">
+<InProcessServer>
+<Path>winsdkfb.dll</Path>
+<ActivatableClass ActivatableClassId="winsdkfb.FBClient" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBFeedRequest" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBSession" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBLoginButton" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBSendRequest" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBAccessTokenData" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBMediaStream" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.winsdkfb_Windows_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBResult" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.ProfilePictureControl" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.ScaleConverter" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBProfilePictureData" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBProfilePicture" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBAppRequest" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBUser" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBSingleValue" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBPage" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBCursors" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBGroup" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBPaginatedArray" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBPaging" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.Graph.FBPermission" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBAppRequest" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FacebookDialog" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBError" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBMediaObject" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.ColorLuminosityConverter" ThreadingModel="both"/>
+<ActivatableClass ActivatableClassId="winsdkfb.FBPermissions" ThreadingModel="both"/>
+</InProcessServer>
+</Extension>
+</Extensions>
+</Package>
